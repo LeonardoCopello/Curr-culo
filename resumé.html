@@ -11,28 +11,35 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         div#interface {
-            width: 750px;
+            position: relative;
+            width: 50%;
+            /*height:900px;*/
             margin: 30px auto 0px 400px;
+            outline: groove rgba(177, 255, 177, .5) 5px;   
+        }
+        #foto {
+            position: relative;
+            width: 100%;
         }
         section {
+            position: relative;
             background-color: rgb(154, 194, 255);
-            display: block;
-            width: 300px;
+            width: 40%;
             float: left;
-            height: 900px;
-        }
-        aside {
-            background-color: rgb(255, 255, 255);
-            display: block;
-            width: 450px;
-            float: right;
-            height: 900px;
+            /*height: 900px;*/
         }
         article#esquerda {
-            padding: 12px;
+            padding: 12px 12px 700px 12px;
+        }
+        aside {
+            position: relative;
+            background-color: rgb(255, 255, 255);
+            width: 60%;
+            float: right;
+            /*height: 900px;*/
         }
         article#direita_topo {
-            padding: 12px 12px 17px 12px;
+            padding: 12px 12px 22px 12px;
             background-color: rgb(5, 2, 165);
             color: white;
         }
@@ -42,9 +49,7 @@
         li {
             margin-left: -22px;
         }
-        #foto {
-            width: 300px;
-        }
+        
         h1 {
             text-align: left;
             font-size: 14px;
@@ -61,16 +66,16 @@
             font-size: 12px;
         }
         h2 {
-            font-size: 40px;
+            position: relative;
+            font-size: 200%;
+            text-shadow: 2px 2px 5px gray;
         }
         h3 {
             font-size: 11px;
             text-emphasis: 1px;
-            font-style: italic ;
+            font-style: italic;
         }
-        
-
-    </style>
+       </style>
 
 </head>
 <body>
@@ -99,7 +104,7 @@
     </section>
     <aside>
         <article id="direita_topo">
-            <h2 style="font-size: 50px;">LEONARDO<br>COPELLO</h2>
+            <h2>LEONARDO<br>COPELLO</h2>
             <p style="font-size: 14px; text-align: justify;">Profissional motivado, com 20 anos de administração de empresa e pessoal. Reconhecido por assessoria em necessidades operacionais e desenvolvimento de soluções para poupar custos, desenvolver lucro e direcionar a satisfação dos consumidores. Engenhoso e bem organizado, com excelentes competências em liderança e desenvolvimento de equipes.</p>
             
         </article>
