@@ -1,52 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-.container {
-  position: relative;
-}
-
-.black-box {
-  position: relative;
-  border: 2px solid black;
-  height: 100px;
-  margin: 30px;
-}
-
-.gray-box {
-  position: absolute;
-  background: lightgray;
-  height: 60px;  
-  width: 70%;
-  left: 50px;
-  top: 50px;
-}
-
-.green-box {
-  position: absolute;
-  background: lightgreen;
-  width: 35%;
-  left: 270px;
-  top: -15px;
-  height: 100px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-
-<h1>Overlapping elements</h1>
-
-<p>If two positioned elements overlap each other without a z-index specified,
-the element defined last in the HTML code will be shown on top:</p>
-
-<div class="container">
-  <div class="black-box">Black box</div>
-  <div class="gray-box">Gray box</div>
-  <div class="green-box">Green box</div>
-</div>
+<form action="/action_page.php">
+    Nome: <br><input type="text" id="fname"><br><br>
+    Sobrenome:<br> <input type="text" id="lname">
+    <p><strong>Localização da Empresa:</strong></p>
+    Brasil<input type="radio" id="local_brasil" name="local_empresa" value="Brasil">
+    Exterior<input type="radio" id="local_exterior" name="local_empresa" value="Exterior"><br>
+    <p><strong>Habilidades Necessárias</strong></p>
+    Html/CSS/JavaScrip<input type="checkbox" id="h_c_j" name="skills" value="hcj"><br>
+    Python<input type="checkbox" id="Python" name="skills" value="P"><br>
+    Java<input type="checkbox" id="Java" name="skills" value="Java"><br>
+    <input type="submit" value="submit">
+</form>
 
 </body>
 </html>
-
-
-
